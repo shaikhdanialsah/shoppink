@@ -15,7 +15,14 @@ Refer here for the demo video: [Shoppink Demo](https://www.youtube.com/watch?v=2
 
 ## Usage
 1. Place the project file into the `xampp/htdocs/` directory.
-2. Open XAMPP and start Apache and MySQL servers for localhost.
+2. Configure your database information into `.env` file
+   ```bash
+   DB_SERVER=YOUR_DATABASE_SERVER
+   DB_USERNAME=YOUR_DATABASE_USERNAME
+   DB_PASSWORD= YOUR_DATABASE_PASSWORD
+   DB_NAME=YOUR_DATABASE_NAME
+   ```  
+3. Open XAMPP and start Apache and MySQL servers for localhost.
 
 ## Authors
 - [Shaikh Danial](https://github.com/shaikhdanialsah)
