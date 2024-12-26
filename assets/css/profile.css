@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.site-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-section {
+    background: #171a21;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.imgs {
+    flex: 0 0 auto;
+    margin-top: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.imgs img {
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px;
+    border-radius: 10%;
+}
+
+.description {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.description p {
+    font-size: 16px;
+    color: #00BBFF;
+    align-items: center;
+}
+
+.description input {
+    margin: 0;
+    font-size: 15px;
+    color: #00BBFF;
+    text-align-last: center;
+    margin-top: 10px;
+
+}
+
+.infos {
+    flex: 1;
+    margin-left:30px; 
+    color: white;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.button_save {
+    padding: 10px 40px;
+    background: #50c938;
+    border: 2px solid #50c938 ;
+    color: #fff;
+    width: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: auto; /* Align to the right */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button_save:hover {
+    color: #50c938;
+    background-color: #fbf3f3; 
+    border-color: #50c938; 
+    cursor: pointer;
+}
+
+.inputs {
+    width: auto;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: #fbf3f3;
+}
+
+.highlight-advanced {
+    background: rgb(101, 78, 4);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.highlight-advanced-points {
+    background: #90938fd3;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 3px 20px;
+    font-size:20px
+}
+
+h1, p {
+    color: white;
+}
+
+.info-icon {
+    float: right;
+    cursor: pointer;
+    color: #43c2ed; /* Blue color, you can change this */
+}
+
+/* Default disabled button style */
+.disabled-button {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Enabled button style */
+.button_save:enabled {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.place-order {
+    background-color: #43c2ed;
+    color: #090909;
+    padding: 9px;
+    cursor: pointer;
+    width:auto;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.place-order:hover {
+    background-color: #ffffff;
+    color: #090909;
+    padding: 9px;
+    width:auto;
+    border-color: #43c2ed;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}

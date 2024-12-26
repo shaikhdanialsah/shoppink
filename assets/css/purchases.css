@@ -1,0 +1,181 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.site-wrap {
+    padding: 60px;
+    width: 100%;
+}
+
+.site-section {
+    background: #171a21;
+    padding: 40px 0;
+    margin-bottom: -90px;
+    border-radius: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.imgs {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust the spacing between image and text */
+}
+
+.imgs img {
+    width: 120px; /* Adjust the size of the profile picture */
+    height: 120px;
+}
+
+.infos {
+    flex: 1;
+    margin-left: 60px; 
+    color:white;
+}
+
+.name {
+    margin-bottom: 10px;
+    color:white;
+}
+
+.button_save {
+    padding: 0.5rem 2rem;
+    background: #43c2ed;
+    border-color: #43c2ed;
+    color: #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: none;  /* Remove shadow */
+    outline: none;     /* Remove default outline */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.button_save:hover {
+  color: #43c2ed;
+  background-color: #fbf3f3;
+  border-color: #43c2ed; 
+  box-shadow: none;  /* Remove shadow */
+  outline: none;     /* Remove default outline */
+  cursor: pointer;
+}
+
+.button_save,
+.button_save_print {
+    padding: 0.5rem 2rem;
+    background: #43c2ed;
+    border-color: #43c2ed;
+    color: #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    box-shadow: none;  /* Remove shadow */
+    outline: none;     /* Remove default outline */
+}
+
+.button_save:hover {
+    color: #43c2ed;
+    background-color: #fbf3f3;
+    border-color: #43c2ed;
+    box-shadow: none;  /* Ensure no shadow on hover */
+    outline: none;     /* Ensure no outline on hover */
+    cursor: pointer;
+}
+
+.button_save_prints {
+    padding: 0.5rem 2rem;
+    background: #50c938;
+    border-color: #50c938;
+    color: #fbf3f3;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    box-shadow: none;  /* Remove shadow */
+    outline: none;     /* Remove default outline */
+}
+
+.button_save_prints:hover {
+    color: #50c938;
+    background-color: #fbf3f3;
+    border-color: #50c938;
+    box-shadow: none;  /* Ensure no shadow on hover */
+    outline: none;     /* Ensure no outline on hover */
+    cursor: pointer;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .col-md-12, .col-sm-6, .col-lg-4 {
+    flex: 1 1 calc(33.333% - 1em);
+  }
+  .block-4 {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+  }
+  .block-4 img {
+    max-width: 100%;
+  }
+  .block-4 h3 {
+    margin: 0.5em 0;
+    color:white;
+  }
+  .block-4 a {
+    color: rgb(12, 11, 11);
+  }
+  .site-block-27 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+  }
+  .site-block-27 ul li a, .site-block-27 ul li span {
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .site-block-27 ul li a:hover, .site-block-27 ul li span:hover {
+    background-color: white;
+    color: #000;
+    border-color: #000;
+  }
+  
+  .site-block-27 .active span {
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .additional-info {
+    margin-left: auto;
+  }
+  .site-block-27 .active span {
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+  }

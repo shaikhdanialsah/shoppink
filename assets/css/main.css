@@ -1,0 +1,168 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.site-wrap {
+    padding: 0px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+.pt-4,.py-4{
+    padding-top:1.5rem!important
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.containers {
+    width: 400px;
+    padding: 40px;
+    background: #ffffffdd;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.containers:hover {
+    transform: scale(1.05); /* Scale up the card slightly */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Increase box-shadow for a more prominent look */
+}
+
+.containers .title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.containers .price {
+    color: #171A21;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.containers span {
+    font-size: 1.2rem;
+}
+
+.containers .description {
+    color: #3b3b3b;
+    font-size: 1.1rem;
+    margin: 20px 0 20px;
+}
+
+.containers .offer {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 15px 0;
+    background-color: #171A21;
+    border: 1px solid #171A21;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.subscribe-button:hover {
+    background: #f5f3f3;
+    color :#171A21;
+    border-color: #171A21;
+}
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
+.ribbon {
+    width: 230px;
+    font-size: 0.918rem;
+    text-align: center;
+    padding: 8px 0;
+    background: #171A21;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17px;
+    top: 29%;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image-generator {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url("/shoppink/assets/images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-generator .content {
+    position: relative;
+    color: #fff;
+    padding: 0 15px;
+    max-width: 760px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency as needed */
+    display: inline-block; /* Ensures the background color only covers the text */
+    border-radius: 30px; /* Optional: Adds rounded corners to the highlight */
+  }
+
+  .text-black
+  {
+    color:black;
+  }

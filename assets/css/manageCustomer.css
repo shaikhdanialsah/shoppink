@@ -1,0 +1,183 @@
+.custom-customer {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 30px;
+    /* margin-top: 10px; */
+}
+  
+.custom-customer .custom-recentOrders {
+    position: relative;
+    display: grid;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+}
+  
+.custom-customer .custom-cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.custom-customer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.custom-customer table thead td {
+    font-weight: 600;
+}
+.custom-customer .custom-recentOrders table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.custom-customer .custom-recentOrders table tr:last-child {
+    border-bottom: none;
+}
+.custom-customer .custom-recentOrders table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.custom-customer .custom-recentOrders table tr td {
+    padding: 25px;
+}
+  
+/*6 tu refer Action  */
+.custom-customer .custom-recentOrders table tr td:nth-child(6) {
+    text-align: center;
+}
+  
+.custom-btnView {
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 150px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #0275d8;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.custom-btnView .custom-btnText {
+    font-size: 16px;
+    font-weight: 500;
+}
+  
+.custom-btnDelete {
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 150px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #0275d8;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.custom-btnDelete .custom-btnText {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.custom-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.custom-form-group input, .custom-form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.custom-form-group img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.custom-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-buttons .custom-back {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.custom-buttons .custom-update {
+    background-color: #4caf50;
+    color: white;
+}
+
+.custom-buttons .custom-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.page-item {
+    margin: 0 5px;
+}
+.page-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    color: #007bff;
+    text-decoration: none;
+}
+.page-link:hover {
+    background-color: #e9ecef;
+}
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+/*  .custom-customer.custom-recentOrders table tr td:last-child {
+    text-align: end;
+}
+.custom-customer .custom-recentOrders table tr td:nth-child(2) {
+    text-align: end;
+}
+.custom-customer .custom-recentOrders table tr td:nth-child(3) {
+    text-align: center;
+} */

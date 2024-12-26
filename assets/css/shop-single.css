@@ -1,0 +1,110 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.site-wrap {
+  padding: 2rem;
+  background-color: #ffffffdd;
+}
+
+.site-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col-md-61 {
+  padding: 20px 40px;
+  width:500px;
+}
+
+.col-md-60 {
+  padding: 20px 40px;
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000; /* Example: 2px wide solid black border */
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-primary {
+  color: #000;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-control {
+  text-align: center;
+  background-color: transparent;
+}
+
+.btn-outline-primary {
+    border: 1px solid #000;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.btn-outline-primary:hover
+{
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+}
+
+.buy-now {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buy-now:hover
+{
+ background-color: #fff;
+ border-color: #000;
+ color: #000;
+ cursor: pointer;
+}
+
+.uniform-image {
+    height: 300px; /* Set the desired height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the assigned area */
+}
+
+.link-return
+{
+  color:#fff;
+}
+.mb-4-text
+{
+  color: #000;
+}

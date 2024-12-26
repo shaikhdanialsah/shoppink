@@ -1,0 +1,153 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+.site-wrap {
+  padding: 2em;
+}
+.site-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-black {
+  color: #ddd;
+}
+.h5 {
+  font-size: 1.25em;
+}
+.dropdown, .btn-group {
+  margin-left: auto;
+}
+.btn {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: #ffffffdd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #555;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.col-md-12, .col-sm-6, .col-lg-4 {
+  flex: 1 1 calc(33.333% - 1em);
+}
+.block-4 {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  display: flex;
+  min-width: 350px;
+  flex-direction: column;
+  background-color: #ffffffdd;
+  border-radius: 15px;
+}
+
+.block-4 img {
+  max-width: 80%;
+  min-width: 80%;
+  transition: transform 0.3s;
+}
+.block-4 h3 {
+  margin: 0.5em 0;
+}
+.block-4 a {
+  color: rgb(12, 11, 11);
+}
+.site-block-27 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+.site-block-27 ul li a, .site-block-27 ul li span {
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: white;
+}
+
+.site-block-27 ul li a:hover, .site-block-27 ul li span:hover {
+  background-color: white;
+  color: #000;
+  border-color: #000;
+}
+
+.site-block-27 .active span {
+  background-color: white;
+  color: #000;
+  border: 1px solid #000;
+}
+
+
+.block-4-image {
+  position: relative;
+}
+
+.block-4-image img {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.block-4-image:hover img {
+  opacity: 0.3;
+  transform: scale(1.1); 
+}
+
+.hover-buttons {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: top 0.3s, opacity 0.3s;
+}
+
+.block-4-image:hover .hover-buttons {
+  top: 50%;
+  opacity: 1;
+}
+
+.btn-view, .btn-add {
+  background-color: #080909;
+  color: white;
+  border-color: #080909;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.btn-view:hover, .btn-add:hover {
+  background-color: white;
+  color: #080909;
+  border-color: #080909;
+}
+
+.text-black
+{
+  color: #080909;
+}
+
+.product-card {
+  flex: 0 1 calc(33.333% - 1rem); /* 1rem is for spacing between items */
+  margin-bottom: 1rem;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

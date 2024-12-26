@@ -1,0 +1,458 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /* Colors */
+    --pink: #ff0066;
+    --blue: #1a1aff;
+    --custom: #1a1aff;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/shoppink/assets/images/wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(10px); /* Adjust the blur intensity as needed */
+}
+
+
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon img {
+    width: 20px;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+section.active {
+    background-color: var(--lightpink);
+}
+
+section .container {
+    position: relative;
+    max-width: 1200px; /* Adjust this value as needed */
+    height: 600px;
+    background-color: #fbf3f3;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+section .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .img-box {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+section .img-box img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section .form-box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #fbf3f3;
+    transition: 500ms ease-in-out;
+}
+
+section .form-box .top,
+section .form-box .bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+section .form-box .top p,
+section .form-box .bottom p {
+    font-size: 13px;
+}
+
+section .form-box .top span,
+section .form-box .bottom span {
+    color: var(--custom);
+    cursor: pointer;
+}
+
+section form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section form .form-control:first-child {
+    text-align: center;
+}
+
+section form .form-control:first-child input {
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-indent: 16px;
+    width: 100%;
+    color: var(--color);
+    outline: none;
+}
+
+section form .form-control:first-child input[type="submit"] {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-color: var(--custom) ;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--custom);
+    color: white;
+    transition: 0.5s;
+}
+
+section form .form-control:first-child input[type="submit"]:hover {
+    background-color: white;
+    color:  var(--custom) ;
+    border-color: var(--custom) ;
+}
+
+section form .form-control:first-child h2 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+section form .form-control:first-child p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+section form .form-control:first-child span {
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+section form .form-control:first-child div {
+    position: relative;
+}
+
+section form .form-control:first-child .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    cursor: pointer;
+}
+
+section form .form-control:last-child {
+    text-align: center;
+}
+
+section form .form-control:last-child p {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+
+section form .form-control:last-child p::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+}
+
+section form .form-control:last-child p::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+}
+
+section form .form-control:last-child .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section form .form-control:last-child .icon {
+    cursor: pointer;
+}
+
+section form .form-control:last-child .icon:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* Functionality */
+
+section .container .signup {
+    pointer-events: none;
+}
+
+section .container.active .signup {
+    pointer-events: initial;
+}
+
+section .container .signup .form-box {
+    top: 100%;
+}
+
+section .container.active .signup .form-box {
+    top: 0;
+}
+
+section .container .signup .img-box {
+    top: -100%;
+}
+
+section .container.active .signup .img-box {
+    top: 0;
+}
+
+section .container .login .form-box {
+    top: 0;
+}
+
+section .container.active .login .form-box {
+    top: 100%;
+}
+
+section .container .login .img-box {
+    top: 0;
+}
+
+section .container.active .login .img-box {
+    top: -100%;
+}
+
+section .container .top p,
+section .container .bottom p {
+    position: relative;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 996px) {
+    section .container {
+        max-width: 400px;
+    }
+
+    section .container .img-box {
+        display: none;
+    }
+
+    section .container .form-box {
+        width: 100%;
+    }
+
+    section .container.active .login .form-box {
+        top: -100%;
+    }
+}
+
+@media (max-width: 567px) {
+    section {
+        padding: 0 30px;
+    }
+}
+
+/* Membership plans styling */
+.membership-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.membership-plans {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    width: 98%;
+}
+
+.plan-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-right: 2%;
+    
+}
+
+.plan-card h4 {
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plan-price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+}
+.toast{
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px 25px 10px 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #50c938;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+  .toast.active{
+    transform: translateX(0%);
+  }
+  .toast .toast-content{
+    display: flex;
+    align-items: center;
+  }
+  .toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #50c938;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  .toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .message .text{
+    font-size: 18px;
+    font-weight: 400;;
+    color: #666666;
+  }
+  .message .text.text-1{
+    font-weight: 600;
+    color: #333;
+  }
+  .toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .toast .close:hover{
+    opacity: 1;
+  }
+  .toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+  }
+  .toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #50c938;
+  }
+  .progress.active:before{
+    animation: progress 3s linear forwards;
+  }
+  @keyframes progress {
+    100%{
+        right: 100%;
+    }
+  }
+  .toast.active ~ button{
+    pointer-events: none;
+  }
+
+  .blue-text {
+    color: #43c2ed;
+    border: 2px solid #43c2ed;
+}
