@@ -1,11 +1,12 @@
 <div align="center">
-  <img src="assets/images/logo" alt="App Logo">
-  <h3>Shoppink</h3>
+  <img src="assets/images/logo.png" alt="App Logo">
+  
 </div>
 
 # About Book Finder
-
 This project is to fulfill the requirements for course code ICT600 - Web Technology and Application. This project is a simple e-commerce web application developed by using HTML, PHP and JavaScript.
+
+Refer here for the demo video: [Shoppink Demo](https://www.youtube.com/watch?v=2Dr2b67ghdc)
 
 
 ## Prerequisites
@@ -19,6 +20,6 @@ This project is to fulfill the requirements for course code ICT600 - Web Technol
 ## Authors
 - [Shaikh Danial](https://github.com/shaikhdanialsah)
 - [Azim Nasib](https://github.com/ajimnasib)
-- 
+  
 ## License
 Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
