@@ -3,7 +3,7 @@
   
 </div>
 
-# About Book Finder
+# Shoppink
 This project is to fulfill the requirements for course code ICT600 - Web Technology and Application. This project is a simple e-commerce web application developed by using HTML, PHP and JavaScript.
 
 Refer here for the demo video: [Shoppink Demo](https://www.youtube.com/watch?v=2Dr2b67ghdc)
